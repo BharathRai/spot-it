@@ -7,7 +7,7 @@
     Spot-IT is a web application that provides a dashboard with powerful tools to manage your Spotify library.  
     This version is a public utility where users connect their own Spotify Developer credentials to safely manage their playlists.
     <br /><br />
-    <a href="https://spot-it-frontend.onrender.com/">🌐 Live Demo</a>
+    <a href="https://spot-it-frontend.onrender.com/">🌐 Live Website</a>
     ·
     <a href="https://github.com/BharathRai/spot-it/issues">🐞 Report Bug</a>
     ·
