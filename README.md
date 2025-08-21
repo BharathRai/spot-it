@@ -1,80 +1,71 @@
-Spot-IT: Your Personal Spotify Dashboard 🎵
-Spot-IT is a web application that provides a dashboard with powerful tools to manage your Spotify library. This version is a public utility where users connect their own Spotify Developer credentials to safely manage their playlists.
+<div align="center">
+  <a href="https://github.com/BharathRai/spot-it">
+    <img src="your-app-logo.png" alt="Spot-IT Logo" width="150">
+  </a>
+  <h1 align="center">Spot-IT: Your Personal Spotify Dashboard 🎵</h1>
+  <p align="center">
+    Spot-IT is a web application that provides a dashboard with powerful tools to manage your Spotify library.  
+    This version is a public utility where users connect their own Spotify Developer credentials to safely manage their playlists.
+    <br /><br />
+    <a href="https://spot-it-frontend.onrender.com/">🌐 Live Demo</a>
+    ·
+    <a href="https://github.com/BharathRai/spot-it/issues">🐞 Report Bug</a>
+    ·
+    <a href="https://github.com/BharathRai/spot-it/issues">✨ Request Feature</a>
+  </p>
+</div>
 
-Live Demo: You can use the live application here: https://spot-it-frontend.onrender.com/ (Replace with your actual deployed frontend URL)
+---
 
-## Features
-Playlist Cleaner: Scan any of your playlists to find and remove duplicate tracks with a single click.
+## ✨ Features
 
-Weekly Archiver: Automatically save your "Discover Weekly" and "Release Radar" playlists to a permanent archive before they are refreshed each week.
+- **Playlist Cleaner** 🧹  
+  Scan any of your playlists to find and remove duplicate tracks with a single click.  
 
-Playlist Creator: Generate a new Spotify playlist based on a folder of your local audio files.
+- **Weekly Archiver** 💾  
+  Automatically save your *Discover Weekly* and *Release Radar* playlists to a permanent archive before they refresh each week.  
 
-## Tech Stack
-Frontend: React, Axios
+- **Playlist Creator** 🎶  
+  Generate a new Spotify playlist based on a folder of your local audio files.  
 
-Backend: Node.js, Express.js, Express Session
+---
 
-Deployment: Render
+## 🛠️ Tech Stack
 
-## Usage and Setup
-There are two ways to use this application: as an end-user on the deployed website, or as a developer running it locally.
+**Frontend:** React, Axios  
+**Backend:** Node.js, Express.js, Express Session  
+**Deployment:** Render  
 
-### For End-Users (Using the Live App)
-To use the live application, you need to provide your own Spotify API keys. This ensures the application only has permission to access your library while you are using it.
+---
 
-Go to the Spotify Developer Dashboard: https://developer.spotify.com/dashboard
+## 🚀 Usage and Setup
 
-Log in and click "Create app". Give it any name and description (e.g., "Spot-IT Tool").
+There are two ways to use this application:  
 
-Once created, you will see your Client ID and a button to show your Client Secret. Keep this page open.
+1. **End-Users** → Use the deployed web app.  
+2. **Developers** → Run it locally.  
 
-Go to the Spot-IT live application URL. The login page will show you a Redirect URI that you must copy.
+---
 
-It will look something like this: https://spot-it-backend.onrender.com/auth/callback
+### 🧑‍💻 For End-Users (Using the Live App)
 
-Go back to your Spotify Developer Dashboard and click "Edit settings". Paste the copied Redirect URI into the "Redirect URIs" field, click "Add", and then "Save".
+⚠️ **Important:** You must provide your **own Spotify API keys**.  
+This ensures the app only has permission to access your library during use.
 
-Now, copy your Client ID and Client Secret from the Spotify dashboard and paste them into the form on the Spot-IT login page.
+1. Go to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard).  
+2. Log in and click **"Create app"** → give it a name/description (e.g., *Spot-IT Tool*).  
+3. Copy your **Client ID** and **Client Secret**.  
+4. Open the [Spot-IT Live App](https://spot-it-frontend.onrender.com/).  
+   On the login page, you’ll see a **Redirect URI** (e.g. `https://spot-it-backend.onrender.com/auth/callback`).  
+5. In the Spotify Dashboard → **Edit Settings** → paste the Redirect URI → Save.  
+6. Enter your **Client ID** and **Client Secret** on the Spot-IT login page.  
+7. Click **Configure Credentials** → **Login with Spotify** → start using Spot-IT 🎶.  
 
-Click "Configure Credentials" and then log in!
+---
 
-### For Developers (Running Locally)
-Clone the repository:
+### 💻 For Developers (Running Locally)
 
-Bash
-
+#### Clone the repository
+```sh
 git clone https://github.com/BharathRai/spot-it.git
 cd spot-it
-Backend Setup:
-
-Navigate to the backend folder: cd backend
-
-Install dependencies: npm install
-
-Create an environment file from the example: cp .env.example .env
-
-Edit the .env file with your local settings:
-
-Ini, TOML
-
-REDIRECT_URI=http://localhost:5000/auth/callback
-FRONTEND_URL=http://localhost:3000
-PORT=5000
-SESSION_SECRET=your_super_secret_session_key
-Start the backend server: npm start
-
-Frontend Setup:
-
-Open a new terminal and navigate to the frontend folder: cd frontend
-
-Install dependencies: npm install
-
-Create a .env file and add your backend URL:
-
-Ini, TOML
-
-REACT_APP_BACKEND_URL=http://localhost:5000
-Start the frontend server: npm start
-
-Open your browser and go to http://localhost:3000.
