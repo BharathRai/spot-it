@@ -1,3 +1,4 @@
+````markdown
 <div align="center">
   <a href="https://github.com/BharathRai/spot-it">
     <img src="your-app-logo.png" alt="Spot-IT Logo" width="150">
@@ -31,6 +32,14 @@
 ---
 
 ## 🛠️ Tech Stack
+
+<p align="left">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Badge">
+  <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge" alt="Axios Badge">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js Badge">
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js Badge">
+  <img src="https://img.shields.io/badge/Render-4682B4?style=for-the-badge&logo=render&logoColor=white" alt="Render Badge">
+</p>
 
 **Frontend:** React, Axios  
 **Backend:** Node.js, Express.js, Express Session  
@@ -69,3 +78,91 @@ This ensures the app only has permission to access your library during use.
 ```sh
 git clone https://github.com/BharathRai/spot-it.git
 cd spot-it
+````
+
+#### Backend Setup
+
+```sh
+cd backend
+npm install
+cp .env.example .env
+```
+
+Edit `.env` with your local settings:
+
+```env
+REDIRECT_URI=http://localhost:5000/auth/callback
+FRONTEND_URL=http://localhost:3000
+PORT=5000
+SESSION_SECRET=your_super_secret_session_key
+```
+
+Start backend:
+
+```sh
+npm start
+```
+
+#### Frontend Setup
+
+Open a new terminal:
+
+```sh
+cd frontend
+npm install
+```
+
+Create `.env`:
+
+```env
+REACT_APP_BACKEND_URL=http://localhost:5000
+```
+
+Start frontend:
+
+```sh
+npm start
+```
+
+Now open 👉 [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📸 Screenshots / Preview (Optional)
+
+*Add screenshots or GIFs here to showcase the UI. Example:*
+
+![Spot-IT Screenshot](screenshot.png)
+
+---
+
+## 🐛 Reporting Issues
+
+Found a bug or want to suggest a feature?
+➡️ [Open an Issue](https://github.com/BharathRai/spot-it/issues) on GitHub.
+
+---
+
+## ❤️ Contributing
+
+Contributions are welcome!
+Fork the repo → create a branch → make changes → submit a PR.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+See the [LICENSE](./LICENSE) file for details.
+
+---
+
+### 🔧 Notes
+
+* Replace `your-app-logo.png` with your actual app logo.
+* Keep your **Spotify API credentials** secure.
+* Update deployment URLs if they change.
+* Add screenshots/GIFs for better appeal.
+
+```
+```
