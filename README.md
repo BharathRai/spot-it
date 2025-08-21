@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/BharathRai/spot-it">
-    <img src="your-app-logo.png" alt="Spot-IT Logo" width="150">
+    <b>Spot-IT</b>
   </a>
   <h1 align="center">Spot-IT: Your Personal Spotify Dashboard 🎵</h1>
   <p align="center">
