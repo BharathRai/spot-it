@@ -77,3 +77,40 @@ This ensures the app only has permission to access your library during use.
 ```sh
 git clone https://github.com/BharathRai/spot-it.git
 cd spot-it
+Backend Setup
+sh
+Copy code
+cd backend
+npm install
+cp .env.example .env
+Edit .env with your local settings:
+
+env
+Copy code
+REDIRECT_URI=http://localhost:5000/auth/callback
+FRONTEND_URL=http://localhost:3000
+PORT=5000
+SESSION_SECRET=your_super_secret_session_key
+Start backend:
+
+sh
+Copy code
+npm start
+Frontend Setup
+Open a new terminal:
+
+sh
+Copy code
+cd frontend
+npm install
+Create .env:
+
+env
+Copy code
+REACT_APP_BACKEND_URL=http://localhost:5000
+Start frontend:
+
+sh
+Copy code
+npm start
+Now open 👉 http://localhost:3000
